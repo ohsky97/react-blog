@@ -1,8 +1,9 @@
 import React from 'react';
 import Navigation from './components/common/navigation';
-import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 import PageRenderer from './page-renderer';
+import Home from './pages/home';
 
 function App() {
   const user = {
@@ -16,7 +17,7 @@ function App() {
         <Navigation user = {user} />
         <Switch>
           <Route path="/:page" component={PageRenderer} />
-          <Route path="/" render = {() => <Redirect to="/home" />} />
+          <Route path="/" component={Home} />
           <Route component={() => 404} />
         </Switch>
       </div>
