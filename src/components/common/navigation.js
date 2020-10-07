@@ -5,19 +5,19 @@ import {Avatar} from 'antd';
 const navLinks = [
     {
         title: 'Home',
-        path: '/'
+        path: '/react-blog/'
     },
     {
         title: 'blog',
-        path: '/blog'
+        path: '/react-blog/blog'
     },
     {
         title: 'Contact Us',
-        path: '/contact-us'
+        path: '/react-blog/contact-us'
     },
     {
         title: 'Login',
-        path: '/login'
+        path: '/react-blog/login'
     }
 ]
 
