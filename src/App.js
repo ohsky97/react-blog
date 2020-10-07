@@ -16,8 +16,8 @@ function App() {
       <div className="App">
         <Navigation user = {user} />
         <Switch>
-          <Route path="/:page" component={PageRenderer} />
-          <Route exact path="/" component={Home} />
+          <Route path="/react-blog/:page" component={PageRenderer} />
+          <Route exact path="/react-blog/" component={Home} />
           <Route component={() => 404} />
         </Switch>
       </div>
