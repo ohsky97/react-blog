@@ -3,7 +3,7 @@ import { useRouteMatch } from 'react-router-dom';
 
 
 const generatePage = page => {
-    const component = () => require(`./pages/${page}`).default
+    const component = () => require(`./pages/react-blog/${page}`).default
 
     try {
         return React.createElement(component())
