@@ -5,7 +5,7 @@ import {Avatar} from 'antd';
 const navLinks = [
     {
         title: 'Home',
-        path: '/react-blog/'
+        path: '/react-blog/home'
     },
     {
         title: 'blog',
