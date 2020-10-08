@@ -8,7 +8,7 @@ const generatePage = page => {
     try {
         return React.createElement(component())
     } catch (err) {
-        console.log(err);
+        console.info(err);
         return React.createElement(() => 404)
     }
 }
